@@ -1,0 +1,12 @@
+{
+    "words": {
+        "person" : ["student", "teacher", "faggot", "programmer"],
+        "verb" : ["drank", "ate", "snorted", "ingested"],
+        "object" : ["jars", "chug jugs", "botles", "boxes", "blocks"],
+        "content" : ["spaghetti", "gilly juice", "fiber supplement", "poop", "bread", "silt", "literally poop"],
+        "human part" : ["anus", "brain", "liver"]
+    },
+    "units":{
+        "time":["hours", "days", "weeks", "months", "years"]
+    }
+}
