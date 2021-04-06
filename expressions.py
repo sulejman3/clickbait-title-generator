@@ -18,6 +18,20 @@ def dict_gen(database):
     return op_db
 
 
+def clickbaits(db):
+    words = db['words']
+    units = db['units']
+    num1 = str(random.randint(1,10))
+    num2 = str(random.randint(1,10))
+
+    clickbaits = [
+        f"My {words['human part']} hurts! I {words['verb']} too much {words['content']}.",
+        f"A {words['person']} {words['verb']} {num1} {words['object']} of {words['content']} for {num2} {units['time']}. See what happened to their {words['human part']}!"
+    ]
+    clickbait = random.choice(clickbaits)
+    return clickbait
+
+
 # example output:
 # My brain hurts! I ate too much shit!
 def butthurt(db):
@@ -36,4 +50,6 @@ def shitpost(db):
 
 
 if __name__ == "__main__":
-    print(dict_gen("cb_library.json"))
+    for _ in range(20):
+        db = dict_gen("cb_library.json")
+        print(clickbaits(db))
