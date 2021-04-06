@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 import random
-import expressions as e
 import json
 
 def dict_gen(database):
